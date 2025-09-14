@@ -1,1 +1,1 @@
-this is the repository for teh course CS-324
+this is the repository for the course CS-324
