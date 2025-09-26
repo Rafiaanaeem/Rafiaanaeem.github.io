@@ -1,0 +1,40 @@
+*{
+    background-color: rgb(19, 11, 19);
+  
+}
+h1{
+    color:rgb(229, 234, 109);
+
+}
+.one{
+   color:rgb(247, 198, 52);
+}
+h2{
+    color:rgb(239, 112, 112);
+}
+
+h2:hover{
+    background-color: rgb(243, 241, 112);
+    color:darkblue;
+}
+
+p::first-letter{
+    font-size: 3em;
+}
+section ol li{
+    color:rgb(165, 15, 15);
+    background-color: rgb(236, 234, 234);
+}
+section ul li{
+    font-size:18px;
+    color:rgb(7, 65, 7);
+    background-color: rgb(234, 234, 163);
+}
+footer>p{
+    font-size: 20px;
+   color:rgb(229, 234, 109);
+}
+a[href$="pk/"]{
+    color:white;
+
+}
