@@ -277,8 +277,9 @@ nav ul li a:hover {
    
 }
 .card {
-    /*flex-shrink:2*/
-    height:420px;
+    /*flex-shrink:2
+    */
+    height:430px;
 flex-basis:0;
     flex-grow:2;
   width: 300px;
