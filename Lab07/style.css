@@ -1,0 +1,275 @@
+:root {
+  --bg-color: #130b13;
+  --main-heading-color: rgb(229, 234, 109);
+  --text-color: rgb(247, 198, 52);
+  --sub-heading-color: rgb(239, 112, 112);
+  --highlight-color: rgb(243, 241, 112);
+  --font-size-base: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "about about"
+    "hobbies interests"
+    "education skills"
+    "things things";
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+nav {
+  background: #222;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: var(--main-heading-color);
+  color: darkslategray;
+}
+#myimg{
+  height:500px;
+  width:390px;
+}
+h1 {
+  text-align: center;
+  color: var(--main-heading-color);
+  margin: 20px 0;
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--highlight-color);
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: var(--sub-heading-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2:hover {
+  background-color: var(--highlight-color);
+  color: darkblue;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.one {
+  color: var(--text-color);
+  text-align: justify;
+  border-left: 3px solid var(--highlight-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid var(--highlight-color);
+  max-width: 100%;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  background: #6e6a6a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  background: black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: var(--highlight-color);
+  margin: 10px 0;
+}
+
+.card p {
+  color: white;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0,0,0,0.3);
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+}
+
+caption {
+  color: var(--main-heading-color);
+  font-size: 1.3rem;
+  margin: 10px;
+  text-decoration: underline;
+}
+
+thead th {
+  background: var(--highlight-color);
+  color: black;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--highlight-color);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  color: var(--main-heading-color);
+  margin-top: 2rem;
+  padding: 15px;
+  border-top: 2px solid var(--highlight-color);
+}
+
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "about about"
+      "hobbies interests"
+      "education skills"
+      "things things";
+    gap: 2.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  body {
+    font-size: 15px;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "about"
+      "hobbies"
+      "interests"
+      "education"
+      "skills"
+      "things";
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 599px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    margin: 3px 0;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "about"
+      "hobbies"
+      "interests"
+      "education"
+      "skills"
+      "things";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
