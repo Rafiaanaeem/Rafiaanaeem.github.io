@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Details Form</title>
+  <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+
+  <h2>MY DETAILS FORM</h2>
+
+  <form action="#" method="get">
+    
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label for="cnic">CNIC:</label>
+    <input type="text" id="cnic" name="cnic" placeholder="Enter your CNIC "><br><br>
+
+    <label for="telephone">Telephone Number:</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="Enter your contact number "><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="m" name="gender" value="Male">
+    <label for="m">Male</label>
+    <input type="radio" id="f" name="gender" value="Female">
+    <label for="f">Female</label><br><br>
+
+
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="">Choose city</option>
+      <option value="Islamabad">Islamabad</option>
+      <option value="Rawalpindi">Rawalpindi</option>
+      <option value="Lahore">Lahore</option>
+      <option value="Karachi">Karachi</option>
+      <option value="Peshawar">Peshawar</option>
+      <option value="Quetta">Quetta</option>
+    </select><br><br>
+
+    <label for="age">Your Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age" min="10" max="50"><br><br>
+    <label>Current Semester:</label>
+    <input type="radio" id="sem1" name="semester" value="1st">
+        <label for="sem1">1st Semester</label>
+   
+    <input type="radio" id="sem2" name="semester" value="2nd">
+    <label for="sem2">2nd Semester</label>
+    <input type="radio" id="sem3" name="semester" value="3rd">
+         <label for="sem3">3rd Semester</label>
+
+    <input type="radio" id="sem4" name="semester" value="4th">
+       <label for="sem4">4th Semester</label>
+  
+    <input type="radio" id="sem5" name="semester" value="5th">
+      <label for="sem5">5th Semester</label>
+      <br><br>
+
+    <label>Courses Completed:</label><br>
+    <input type="checkbox" id="cpp" name="courses" value="C++ Programming">
+    <label for="cpp">C++ Programming</label><br>
+    <input type="checkbox" id="oop" name="courses" value="Object Oriented Programming">
+    <label for="oop">Object Oriented Programming</label><br>
+    <input type="checkbox" id="db" name="courses" value="Database Systems">
+    <label for="db">Database Systems</label><br>
+    <input type="checkbox" id="ds" name="courses" value="Data Structures">
+    <label for="ds">Data Structures</label><br>
+    <input type="checkbox" id="web" name="courses" value="Web Development">
+    <label for="web">Web Development</label><br>
+    <input type="checkbox" id="ai" name="courses" value="Artificial Intelligence">
+    <label for="ai">Artificial Intelligence</label><br><br>
+
+    <label for="things">my fav things:</label><br>
+    <textarea id="things" name="bio" placeholder="Write about yourself." rows="4"></textarea><br><br>
+
+    <label for="favcolor">Favorite Color:</label><br>
+    <input type="color" id="favcolor" name="favcolor"><br><br>
+
+    <label for="file">Upload Your Picture:</label><br>
+    <input type="file" id="file" name="file"><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </form>
+
+  <script src="scriptform.js"></script>
+</body>
+</html>

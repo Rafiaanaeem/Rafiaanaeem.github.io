@@ -4,7 +4,7 @@
   --text-color: rgb(247, 198, 52);
   --sub-heading-color: rgb(239, 112, 112);
   --highlight-color: rgb(243, 241, 112);
-  --font-size-base: 16px;
+  --font-size-base: 14px;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  background: #222;
+  background: #222222;
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -59,20 +59,24 @@ nav ul li a:hover {
   color: darkslategray;
 }
 #myimg{
-  height:500px;
-  width:390px;
+  height:400px;
+  width:320px;
 }
+a{
+  color:white;
+}
+
 h1 {
   text-align: center;
   color: var(--main-heading-color);
   margin: 20px 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-bottom: 2px solid var(--highlight-color);
   padding-bottom: 10px;
 }
 
 h2 {
-  color: var(--sub-heading-color);
+  color: var( --main-heading-color);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -130,7 +134,7 @@ img {
 
 .card p {
   color: white;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 table {
@@ -143,7 +147,7 @@ table {
 
 caption {
   color: var(--main-heading-color);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 10px;
   text-decoration: underline;
 }
@@ -176,7 +180,7 @@ footer {
 
 @media (min-width: 1200px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .grid-container {
@@ -190,7 +194,7 @@ footer {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .card img {
@@ -200,7 +204,7 @@ footer {
 
 @media (min-width: 600px) and (max-width: 1199px) {
   body {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .grid-container {
@@ -222,7 +226,7 @@ footer {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #cards {
@@ -231,7 +235,7 @@ footer {
 }
 @media (max-width: 599px) {
   body {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   nav ul {
@@ -240,7 +244,7 @@ footer {
   }
 
   nav ul li a {
-    font-size: 16px;
+    font-size: 14px;
     margin: 3px 0;
   }
 
@@ -258,7 +262,7 @@ footer {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   #cards {
@@ -270,6 +274,6 @@ footer {
   }
 
   footer {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
